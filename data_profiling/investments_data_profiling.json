@@ -1,0 +1,150 @@
+{
+    "created_at": "2025-04-20T11:44:02.951023",
+    "person_in_charge": "Mrs. H",
+    "profiling_result": {
+        "table_name": "investments_data",
+        "format_file": "from Staging",
+        "n_rows": 59407,
+        "n_cols": 6,
+        "report": {
+            "investment_id": {
+                "data_type": "int",
+                "sample_values": [
+                    148,
+                    833,
+                    463,
+                    471,
+                    496
+                ],
+                "unique_count": 59407,
+                "unique_value": [
+                    148,
+                    833,
+                    463,
+                    471,
+                    496
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 1,
+                "max_value": 67601,
+                "percentage_valid_date": null
+            },
+            "funding_round_id": {
+                "data_type": "int",
+                "sample_values": [
+                    148,
+                    463,
+                    496,
+                    1088,
+                    1342
+                ],
+                "unique_count": 27427,
+                "unique_value": [
+                    148,
+                    463,
+                    496,
+                    1088,
+                    1342
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 1,
+                "max_value": 57948,
+                "percentage_valid_date": null
+            },
+            "funded_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:4366",
+                    "c:5032",
+                    "c:6249",
+                    "c:6758",
+                    "c:3638"
+                ],
+                "unique_count": 17538,
+                "unique_value": [
+                    "c:4366",
+                    "c:5032",
+                    "c:6249",
+                    "c:6758",
+                    "c:3638"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:1",
+                "max_value": "c:9972",
+                "percentage_valid_date": null
+            },
+            "investor_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "f:339",
+                    "f:200",
+                    "f:197",
+                    "f:1939",
+                    "f:2162"
+                ],
+                "unique_count": 6580,
+                "unique_value": [
+                    "f:339",
+                    "f:200",
+                    "f:197",
+                    "f:1939",
+                    "f:2162"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:10022",
+                "max_value": "f:9999",
+                "percentage_valid_date": null
+            },
+            "created_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2007-07-18T15:56:25",
+                    "2007-09-03T12:50:21",
+                    "2007-07-31T08:17:58",
+                    "2007-11-22T18:58:27",
+                    "2008-02-05T22:44:51"
+                ],
+                "unique_count": 27072,
+                "unique_value": [
+                    "2007-07-18T15:56:25",
+                    "2007-09-03T12:50:21",
+                    "2007-07-31T08:17:58",
+                    "2007-11-22T18:58:27",
+                    "2008-02-05T22:44:51"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2007-05-27T06:09:10",
+                "max_value": "2013-12-12T14:12:05",
+                "percentage_valid_date": 100.0
+            },
+            "updated_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2013-05-30T10:36:47",
+                    "2013-05-02T01:14:39",
+                    "2008-07-23T05:23:00",
+                    "2008-02-25T00:25:17",
+                    "2010-03-04T10:36:27"
+                ],
+                "unique_count": 23674,
+                "unique_value": [
+                    "2013-05-30T10:36:47",
+                    "2013-05-02T01:14:39",
+                    "2008-07-23T05:23:00",
+                    "2008-02-25T00:25:17",
+                    "2010-03-04T10:36:27"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-02-24T21:10:28",
+                "max_value": "2013-12-12T14:12:05",
+                "percentage_valid_date": 100.0
+            }
+        }
+    }
+}

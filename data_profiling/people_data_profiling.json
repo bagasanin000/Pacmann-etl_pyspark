@@ -1,0 +1,150 @@
+{
+    "created_at": "2025-04-20T11:43:03.199060",
+    "person_in_charge": "Mr. A",
+    "profiling_result": {
+        "table_name": "people_data",
+        "format_file": "from Staging",
+        "n_rows": 226709,
+        "n_cols": 6,
+        "report": {
+            "people_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "177264",
+                    "296",
+                    "177595",
+                    "467",
+                    "177826"
+                ],
+                "unique_count": 226709,
+                "unique_value": [
+                    "177264",
+                    "296",
+                    "177595",
+                    "467",
+                    "177826"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "1",
+                "max_value": "99999",
+                "percentage_valid_date": null
+            },
+            "object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "p:214744",
+                    "p:214825",
+                    "p:73",
+                    "p:171",
+                    "p:214"
+                ],
+                "unique_count": 226709,
+                "unique_value": [
+                    "p:214744",
+                    "p:214825",
+                    "p:73",
+                    "p:171",
+                    "p:214"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "p:10",
+                "max_value": "p:99999",
+                "percentage_valid_date": null
+            },
+            "first_name": {
+                "data_type": "string",
+                "sample_values": [
+                    "Nell",
+                    "Hideki",
+                    "Tyler",
+                    "K",
+                    "Nithi"
+                ],
+                "unique_count": 28423,
+                "unique_value": [
+                    "Nell",
+                    "Hideki",
+                    "Tyler",
+                    "K",
+                    "Nithi"
+                ],
+                "null_count": 5,
+                "percentage_missing_value": 0.0,
+                "min_value": "\"\"\"DJ\"",
+                "max_value": "\u00de\u00f3rlindur",
+                "percentage_valid_date": null
+            },
+            "last_name": {
+                "data_type": "string",
+                "sample_values": [
+                    "Francois",
+                    "Nerst",
+                    "Banerjee",
+                    "Cancel",
+                    "Tyler"
+                ],
+                "unique_count": 107774,
+                "unique_value": [
+                    "Francois",
+                    "Nerst",
+                    "Banerjee",
+                    "Cancel",
+                    "Tyler"
+                ],
+                "null_count": 1,
+                "percentage_missing_value": 0.0,
+                "min_value": "!llmind",
+                "max_value": "\u00fcz\u00fcm",
+                "percentage_valid_date": null
+            },
+            "birthplace": {
+                "data_type": "string",
+                "sample_values": [
+                    "Gainesville, FL",
+                    "jacksonville , FL",
+                    "Brisbane, Australia",
+                    "Bangalore",
+                    "Utah"
+                ],
+                "unique_count": 8273,
+                "unique_value": [
+                    "Gainesville, FL",
+                    "jacksonville , FL",
+                    "Brisbane, Australia",
+                    "Bangalore",
+                    "Utah"
+                ],
+                "null_count": 198622,
+                "percentage_missing_value": 87.61,
+                "min_value": " Jr.\"",
+                "max_value": "\u00e4\u00b8\u00ad\u00e5\u009b\u00bd",
+                "percentage_valid_date": null
+            },
+            "affiliation_name": {
+                "data_type": "string",
+                "sample_values": [
+                    "Blue Nile",
+                    "Pandora Media",
+                    "YouSendIt",
+                    "Diet TV",
+                    "SomethingSimpler"
+                ],
+                "unique_count": 27250,
+                "unique_value": [
+                    "Blue Nile",
+                    "Pandora Media",
+                    "YouSendIt",
+                    "Diet TV",
+                    "SomethingSimpler"
+                ],
+                "null_count": 21,
+                "percentage_missing_value": 0.01,
+                "min_value": "! Haz Life",
+                "max_value": "\u00d6resundswebb",
+                "percentage_valid_date": null
+            }
+        }
+    }
+}

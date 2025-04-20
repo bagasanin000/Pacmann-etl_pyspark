@@ -1,0 +1,234 @@
+{
+    "created_at": "2025-04-20T11:43:17.135207",
+    "person_in_charge": "Mr. CCC",
+    "profiling_result": {
+        "table_name": "relationship_data",
+        "format_file": "from Staging",
+        "n_rows": 134726,
+        "n_cols": 10,
+        "report": {
+            "relationship_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "57608",
+                    "165462",
+                    "57868",
+                    "57904",
+                    "110593"
+                ],
+                "unique_count": 134726,
+                "unique_value": [
+                    "57608",
+                    "165462",
+                    "57868",
+                    "57904",
+                    "110593"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "1",
+                "max_value": "99999",
+                "percentage_valid_date": null
+            },
+            "person_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "p:73",
+                    "p:171",
+                    "p:214",
+                    "p:90199",
+                    "p:90308"
+                ],
+                "unique_count": 108193,
+                "unique_value": [
+                    "p:73",
+                    "p:171",
+                    "p:214",
+                    "p:90199",
+                    "p:90308"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "p:10",
+                "max_value": "p:99998",
+                "percentage_valid_date": null
+            },
+            "relationship_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:65515",
+                    "c:14334",
+                    "c:7820",
+                    "f:4388",
+                    "c:64178"
+                ],
+                "unique_count": 43529,
+                "unique_value": [
+                    "c:65515",
+                    "c:14334",
+                    "c:7820",
+                    "f:4388",
+                    "c:64178"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:1",
+                "max_value": "f:9995",
+                "percentage_valid_date": null
+            },
+            "start_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2010-10-01 00:00:00.000",
+                    "2009-06-23 00:00:00.000",
+                    "2011-05-03 00:00:00.000",
+                    "2012-04-04 00:00:00.000",
+                    "2010-05-24 00:00:00.000"
+                ],
+                "unique_count": 3536,
+                "unique_value": [
+                    "2010-10-01 00:00:00.000",
+                    "2009-06-23 00:00:00.000",
+                    "2011-05-03 00:00:00.000",
+                    "2012-04-04 00:00:00.000",
+                    "2010-05-24 00:00:00.000"
+                ],
+                "null_count": 72048,
+                "percentage_missing_value": 53.48,
+                "min_value": "1960-01-01 00:00:00.000",
+                "max_value": "2013-12-15 00:00:00.000",
+                "percentage_valid_date": null
+            },
+            "end_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2010-10-01 00:00:00.000",
+                    "2011-05-03 00:00:00.000",
+                    "2012-09-07 00:00:00.000",
+                    "2012-04-04 00:00:00.000",
+                    "2012-09-25 00:00:00.000"
+                ],
+                "unique_count": 2065,
+                "unique_value": [
+                    "2010-10-01 00:00:00.000",
+                    "2011-05-03 00:00:00.000",
+                    "2012-09-07 00:00:00.000",
+                    "2012-04-04 00:00:00.000",
+                    "2012-09-25 00:00:00.000"
+                ],
+                "null_count": 115472,
+                "percentage_missing_value": 85.71,
+                "min_value": "1960-01-01 00:00:00.000",
+                "max_value": "2014-10-01 00:00:00.000",
+                "percentage_valid_date": null
+            },
+            "is_past": {
+                "data_type": "string",
+                "sample_values": [
+                    "false"
+                ],
+                "unique_count": 1,
+                "unique_value": [
+                    "false"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "false",
+                "max_value": "false",
+                "percentage_valid_date": null
+            },
+            "sequence": {
+                "data_type": "string",
+                "sample_values": [
+                    "363048",
+                    "97717",
+                    "97718",
+                    "284036",
+                    "28463"
+                ],
+                "unique_count": 1223,
+                "unique_value": [
+                    "363048",
+                    "97717",
+                    "97718",
+                    "284036",
+                    "28463"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "1",
+                "max_value": "99479",
+                "percentage_valid_date": null
+            },
+            "title": {
+                "data_type": "string",
+                "sample_values": [
+                    "Founder & CEO",
+                    "Designer, UX, UI",
+                    "VP, Platform & Technology Develop",
+                    "Director of Product Marketing",
+                    "Senior User Interface Developer"
+                ],
+                "unique_count": 27558,
+                "unique_value": [
+                    "Founder & CEO",
+                    "Designer, UX, UI",
+                    "VP, Platform & Technology Develop",
+                    "Director of Product Marketing",
+                    "Senior User Interface Developer"
+                ],
+                "null_count": 5423,
+                "percentage_missing_value": 4.03,
+                "min_value": "\"\"\"Algorithmatician\"\"\"",
+                "max_value": "zoo musicologist",
+                "percentage_valid_date": null
+            },
+            "created_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2012-06-22 00:34:31.000",
+                    "2007-05-31 21:28:58.000",
+                    "2007-06-09 08:47:31.000",
+                    "2009-12-04 02:33:43.000",
+                    "2012-06-22 20:26:06.000"
+                ],
+                "unique_count": 86257,
+                "unique_value": [
+                    "2012-06-22 00:34:31.000",
+                    "2007-05-31 21:28:58.000",
+                    "2007-06-09 08:47:31.000",
+                    "2009-12-04 02:33:43.000",
+                    "2012-06-22 20:26:06.000"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2007-05-25 07:03:54.000",
+                "max_value": "2013-02-14 17:36:56.000",
+                "percentage_valid_date": null
+            },
+            "updated_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2010-01-27 00:32:09.000",
+                    "2008-04-13 18:34:47.000",
+                    "2012-06-24 01:16:01.000",
+                    "2013-08-29 19:08:03.000",
+                    "2011-04-23 03:42:49.000"
+                ],
+                "unique_count": 91116,
+                "unique_value": [
+                    "2010-01-27 00:32:09.000",
+                    "2008-04-13 18:34:47.000",
+                    "2012-06-24 01:16:01.000",
+                    "2013-08-29 19:08:03.000",
+                    "2011-04-23 03:42:49.000"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-02-05 22:43:52.000",
+                "max_value": "2013-12-12 12:56:19.000",
+                "percentage_valid_date": null
+            }
+        }
+    }
+}

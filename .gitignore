@@ -1,0 +1,7 @@
+.env
+backup/
+from_staging.ipynb
+notebook-copy.ipynb
+notebook.ipynb
+test.ipynb
+backup.zip

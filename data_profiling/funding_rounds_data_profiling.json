@@ -1,0 +1,496 @@
+{
+    "created_at": "2025-04-20T11:43:48.568384",
+    "person_in_charge": "Mr. CCC",
+    "profiling_result": {
+        "table_name": "funding_rounds_data",
+        "format_file": "from Staging",
+        "n_rows": 50182,
+        "n_cols": 22,
+        "report": {
+            "funding_round_id": {
+                "data_type": "int",
+                "sample_values": [
+                    148,
+                    463,
+                    496,
+                    833,
+                    1088
+                ],
+                "unique_count": 50182,
+                "unique_value": [
+                    148,
+                    463,
+                    496,
+                    833,
+                    1088
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 1,
+                "max_value": 57952,
+                "percentage_valid_date": null
+            },
+            "object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:636",
+                    "c:2009",
+                    "c:4366",
+                    "c:5032",
+                    "c:6249"
+                ],
+                "unique_count": 29565,
+                "unique_value": [
+                    "c:636",
+                    "c:2009",
+                    "c:4366",
+                    "c:5032",
+                    "c:6249"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:1",
+                "max_value": "c:9998",
+                "percentage_valid_date": null
+            },
+            "funded_at": {
+                "data_type": "date",
+                "sample_values": [
+                    "2006-05-17",
+                    "2007-04-20",
+                    "2005-06-06",
+                    "2007-11-15",
+                    "2001-05-16"
+                ],
+                "unique_count": 3346,
+                "unique_value": [
+                    "2006-05-17",
+                    "2007-04-20",
+                    "2005-06-06",
+                    "2007-11-15",
+                    "2001-05-16"
+                ],
+                "null_count": 205,
+                "percentage_missing_value": 0.41,
+                "min_value": "1960-01-01",
+                "max_value": "2013-12-12",
+                "percentage_valid_date": 99.59
+            },
+            "funding_round_type": {
+                "data_type": "string",
+                "sample_values": [
+                    "venture",
+                    "series-c+",
+                    "series-a",
+                    "other",
+                    "private-equity"
+                ],
+                "unique_count": 9,
+                "unique_value": [
+                    "venture",
+                    "series-c+",
+                    "series-a",
+                    "other",
+                    "private-equity"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "angel",
+                "max_value": "venture",
+                "percentage_valid_date": null
+            },
+            "funding_round_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "g",
+                    "unattributed",
+                    "partial",
+                    "post_ipo_equity",
+                    "f"
+                ],
+                "unique_count": 20,
+                "unique_value": [
+                    "g",
+                    "unattributed",
+                    "partial",
+                    "post_ipo_equity",
+                    "f"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "a",
+                "max_value": "unattributed",
+                "percentage_valid_date": null
+            },
+            "raised_amount_usd": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    8400000.0,
+                    110000.0,
+                    205000.0,
+                    17900000.0,
+                    2306560.0
+                ],
+                "unique_count": 10237,
+                "unique_value": [
+                    8400000.0,
+                    110000.0,
+                    205000.0,
+                    17900000.0,
+                    2306560.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 3835050000.0,
+                "percentage_valid_date": null
+            },
+            "raised_amount": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    8400000.0,
+                    110000.0,
+                    205000.0,
+                    17900000.0,
+                    2860000.0
+                ],
+                "unique_count": 7299,
+                "unique_value": [
+                    8400000.0,
+                    110000.0,
+                    205000.0,
+                    17900000.0,
+                    2860000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 3835050000.0,
+                "percentage_valid_date": null
+            },
+            "raised_currency_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "NIS",
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "AUD"
+                ],
+                "unique_count": 9,
+                "unique_value": [
+                    "NIS",
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "AUD"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "USD",
+                "percentage_valid_date": null
+            },
+            "pre_money_valuation_usd": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    0.0,
+                    550000000.0,
+                    30000000.0,
+                    9000000.0,
+                    39900000.0
+                ],
+                "unique_count": 21,
+                "unique_value": [
+                    0.0,
+                    550000000.0,
+                    30000000.0,
+                    9000000.0,
+                    39900000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 15000000000.0,
+                "percentage_valid_date": null
+            },
+            "pre_money_valuation": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    0.0,
+                    550000000.0,
+                    30000000.0,
+                    9000000.0,
+                    39900000.0
+                ],
+                "unique_count": 21,
+                "unique_value": [
+                    0.0,
+                    550000000.0,
+                    30000000.0,
+                    9000000.0,
+                    39900000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 15000000000.0,
+                "percentage_valid_date": null
+            },
+            "pre_money_currency_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "",
+                    "USD"
+                ],
+                "unique_count": 2,
+                "unique_value": [
+                    "",
+                    "USD"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "USD",
+                "percentage_valid_date": null
+            },
+            "post_money_valuation_usd": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    1312000.0,
+                    8400000.0,
+                    4020000.0,
+                    6564500.0,
+                    150000.0
+                ],
+                "unique_count": 435,
+                "unique_value": [
+                    1312000.0,
+                    8400000.0,
+                    4020000.0,
+                    6564500.0,
+                    150000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 10000000000.0,
+                "percentage_valid_date": null
+            },
+            "post_money_valuation": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    110000.0,
+                    8400000.0,
+                    150000.0,
+                    4020000.0,
+                    2530000.0
+                ],
+                "unique_count": 349,
+                "unique_value": [
+                    110000.0,
+                    8400000.0,
+                    150000.0,
+                    4020000.0,
+                    2530000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 10000000000.0,
+                "percentage_valid_date": null
+            },
+            "post_money_currency_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "AUD",
+                    "JPY"
+                ],
+                "unique_count": 8,
+                "unique_value": [
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "AUD",
+                    "JPY"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "USD",
+                "percentage_valid_date": null
+            },
+            "participants": {
+                "data_type": "string",
+                "sample_values": [
+                    "7",
+                    "15",
+                    "11",
+                    "29",
+                    "3"
+                ],
+                "unique_count": 32,
+                "unique_value": [
+                    "7",
+                    "15",
+                    "11",
+                    "29",
+                    "3"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "0",
+                "max_value": "9",
+                "percentage_valid_date": null
+            },
+            "is_first_round": {
+                "data_type": "boolean",
+                "sample_values": [
+                    false
+                ],
+                "unique_count": 1,
+                "unique_value": [
+                    false
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": false,
+                "max_value": false,
+                "percentage_valid_date": null
+            },
+            "is_last_round": {
+                "data_type": "boolean",
+                "sample_values": [
+                    false
+                ],
+                "unique_count": 1,
+                "unique_value": [
+                    false
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": false,
+                "max_value": false,
+                "percentage_valid_date": null
+            },
+            "source_url": {
+                "data_type": "string",
+                "sample_values": [
+                    "http://www.techcrunch.com/2008/06/02/wakoopa-secures-1-million-for-app-monitoring-social-network/",
+                    "http://findarticles.com/p/articles/mi_m0EIN/is_2004_Oct_6/ai_n6224165",
+                    "http://www.thealarmclock.com/mt/archives/2007/05/veotag_seed_fun.html",
+                    "http://gigaom.com/2007/02/11/dash-series-b/",
+                    "http://www.thealarmclock.com/mt/archives/2006/03/274m_goes_to_pa.html"
+                ],
+                "unique_count": 37713,
+                "unique_value": [
+                    "http://www.techcrunch.com/2008/06/02/wakoopa-secures-1-million-for-app-monitoring-social-network/",
+                    "http://findarticles.com/p/articles/mi_m0EIN/is_2004_Oct_6/ai_n6224165",
+                    "http://www.thealarmclock.com/mt/archives/2007/05/veotag_seed_fun.html",
+                    "http://gigaom.com/2007/02/11/dash-series-b/",
+                    "http://www.thealarmclock.com/mt/archives/2006/03/274m_goes_to_pa.html"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "ttp://paidcontent.org/article/419-ooh-digital-media-provider-ripple-networks-secures-10-million-in-second/",
+                "percentage_valid_date": null
+            },
+            "source_description": {
+                "data_type": "string",
+                "sample_values": [
+                    "Blog Intelligence Firm BuzzLogic Adds $2.5 Million to First Round",
+                    "Collarity raising $7.8M to help sites learn about their users",
+                    "Privately funded",
+                    "Unisfair Gets $10M in Series B Financing",
+                    "Movie special effects company GenArts gets funding from Insight Venture Partners"
+                ],
+                "unique_count": 26193,
+                "unique_value": [
+                    "Blog Intelligence Firm BuzzLogic Adds $2.5 Million to First Round",
+                    "Collarity raising $7.8M to help sites learn about their users",
+                    "Privately funded",
+                    "Unisfair Gets $10M in Series B Financing",
+                    "Movie special effects company GenArts gets funding from Insight Venture Partners"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "\u00e2\u0082\u00ac5 MILLION FUNDS STEMMING FROM HISTORICAL SHAREHOLDERS AND VIVERIS MANAGEMENT",
+                "percentage_valid_date": null
+            },
+            "created_by": {
+                "data_type": "string",
+                "sample_values": [
+                    "mashinsky",
+                    "md110671",
+                    "jkopelman",
+                    "fivecross",
+                    "yoshi"
+                ],
+                "unique_count": 5075,
+                "unique_value": [
+                    "mashinsky",
+                    "md110671",
+                    "jkopelman",
+                    "fivecross",
+                    "yoshi"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "zykina",
+                "percentage_valid_date": null
+            },
+            "created_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2007-07-18T15:56:25",
+                    "2007-07-31T08:17:58",
+                    "2007-09-03T12:50:21",
+                    "2007-11-22T18:58:27",
+                    "2008-02-05T22:44:51"
+                ],
+                "unique_count": 48987,
+                "unique_value": [
+                    "2007-07-18T15:56:25",
+                    "2007-07-31T08:17:58",
+                    "2007-09-03T12:50:21",
+                    "2007-11-22T18:58:27",
+                    "2008-02-05T22:44:51"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2007-05-27T06:08:18",
+                "max_value": "2013-12-12T14:27:53",
+                "percentage_valid_date": 100.0
+            },
+            "updated_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2011-10-23T04:04:39",
+                    "2013-05-30T10:36:47",
+                    "2010-03-31T19:13:25",
+                    "2013-05-02T01:14:39",
+                    "2008-07-23T05:23:00"
+                ],
+                "unique_count": 42186,
+                "unique_value": [
+                    "2011-10-23T04:04:39",
+                    "2013-05-30T10:36:47",
+                    "2010-03-31T19:13:25",
+                    "2013-05-02T01:14:39",
+                    "2008-07-23T05:23:00"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-02-05T22:44:46",
+                "max_value": "2013-12-12T14:27:53",
+                "percentage_valid_date": 100.0
+            }
+        }
+    }
+}

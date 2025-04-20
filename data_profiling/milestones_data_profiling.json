@@ -1,0 +1,211 @@
+{
+    "created_at": "2025-04-20T11:44:19.366199",
+    "person_in_charge": "Mrs. OP",
+    "profiling_result": {
+        "table_name": "milestones_data",
+        "format_file": "from Staging",
+        "n_rows": 8152,
+        "n_cols": 9,
+        "report": {
+            "created_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2010-11-08 15:59:45.000",
+                    "2010-11-15 16:26:31.000",
+                    "2010-11-19 20:35:30.000",
+                    "2010-11-24 01:29:30.000",
+                    "2010-12-22 15:13:04.000"
+                ],
+                "unique_count": 7504,
+                "unique_value": [
+                    "2010-11-08 15:59:45.000",
+                    "2010-11-15 16:26:31.000",
+                    "2010-11-19 20:35:30.000",
+                    "2010-11-24 01:29:30.000",
+                    "2010-12-22 15:13:04.000"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-06-18 08:14:06.000",
+                "max_value": "2013-12-10 20:15:30.000",
+                "percentage_valid_date": null
+            },
+            "description": {
+                "data_type": "string",
+                "sample_values": [
+                    "CounterPath Releases X-Lite 4.0",
+                    "\u00c2\u00a3240,000 video ad revenue sold by single publisher in one day",
+                    "Viewfinity named in 'Hottest Boston Companies' List",
+                    "Qwiki added Albert Azout as Advisor. ",
+                    "500,000 stock photos, graphics and vector illustrations by over 1000 contributors."
+                ],
+                "unique_count": 8012,
+                "unique_value": [
+                    "CounterPath Releases X-Lite 4.0",
+                    "\u00c2\u00a3240,000 video ad revenue sold by single publisher in one day",
+                    "Viewfinity named in 'Hottest Boston Companies' List",
+                    "Qwiki added Albert Azout as Advisor. ",
+                    "500,000 stock photos, graphics and vector illustrations by over 1000 contributors."
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCompleted the raise of StarVest Partners II, a $245 million fund in January 2009",
+                "max_value": "\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3 \u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090",
+                "percentage_valid_date": null
+            },
+            "milestone_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2009-06-23",
+                    "2010-09-24",
+                    "2008-12-03",
+                    "2009-12-04",
+                    "2010-02-12"
+                ],
+                "unique_count": 924,
+                "unique_value": [
+                    "2009-06-23",
+                    "2010-09-24",
+                    "2008-12-03",
+                    "2009-12-04",
+                    "2010-02-12"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-01-01",
+                "max_value": "2010-12-31",
+                "percentage_valid_date": null
+            },
+            "milestone_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "other"
+                ],
+                "unique_count": 1,
+                "unique_value": [
+                    "other"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "other",
+                "max_value": "other",
+                "percentage_valid_date": null
+            },
+            "milestone_id": {
+                "data_type": "bigint",
+                "sample_values": [
+                    8440,
+                    8484,
+                    4823,
+                    9978,
+                    5556
+                ],
+                "unique_count": 8152,
+                "unique_value": [
+                    8440,
+                    8484,
+                    4823,
+                    9978,
+                    5556
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 1,
+                "max_value": 39356,
+                "percentage_valid_date": null
+            },
+            "object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:21084",
+                    "c:58230",
+                    "c:55009",
+                    "c:396",
+                    "c:64940"
+                ],
+                "unique_count": 4065,
+                "unique_value": [
+                    "c:21084",
+                    "c:58230",
+                    "c:55009",
+                    "c:396",
+                    "c:64940"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:1",
+                "max_value": "f:9985",
+                "percentage_valid_date": null
+            },
+            "source_description": {
+                "data_type": "string",
+                "sample_values": [
+                    "Conversocial Launches Enterprise Edition, Sells Into Big TV Broadcaster",
+                    "Progress Software stock split prompts rise in share price",
+                    "Eroom G&G Co Ltd acquires a minority stake in Timo Technology Co Ltd",
+                    "Zedira Raises Additional Funding",
+                    "Zend Framework Adds PHP Cloud Features"
+                ],
+                "unique_count": 5452,
+                "unique_value": [
+                    "Conversocial Launches Enterprise Edition, Sells Into Big TV Broadcaster",
+                    "Progress Software stock split prompts rise in share price",
+                    "Eroom G&G Co Ltd acquires a minority stake in Timo Technology Co Ltd",
+                    "Zedira Raises Additional Funding",
+                    "Zend Framework Adds PHP Cloud Features"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "\t  After Whirlwind Year, Everyday Health To Tap Public Markets For $100M",
+                "max_value": "\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3 \u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090\u00a3\u00e2\u0090",
+                "percentage_valid_date": null
+            },
+            "source_url": {
+                "data_type": "string",
+                "sample_values": [
+                    "http://kara.allthingsd.com/20101110/playboy-goes-geo-local-with-scout-app-even-as-iconic-media-company-attempts-turnaround/?reflink=ATD_mktw_quotes",
+                    "http://www.sec.gov/Archives/edgar/data/1505940/000150594010000001/xslFormDX01/primary_doc.xml",
+                    "http://www.howaboutwe.com",
+                    "http://vnexpress.net/GL/The-gioi/",
+                    "https://www.facebook.com/notes/fbfund/fbfund-2009-top-50-finalists/84440649573"
+                ],
+                "unique_count": 6064,
+                "unique_value": [
+                    "http://kara.allthingsd.com/20101110/playboy-goes-geo-local-with-scout-app-even-as-iconic-media-company-attempts-turnaround/?reflink=ATD_mktw_quotes",
+                    "http://www.sec.gov/Archives/edgar/data/1505940/000150594010000001/xslFormDX01/primary_doc.xml",
+                    "http://www.howaboutwe.com",
+                    "http://vnexpress.net/GL/The-gioi/",
+                    "https://www.facebook.com/notes/fbfund/fbfund-2009-top-50-finalists/84440649573"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "NaN",
+                "max_value": "www://connectwithcoaches.com/",
+                "percentage_valid_date": null
+            },
+            "updated_at": {
+                "data_type": "string",
+                "sample_values": [
+                    "2010-11-03 17:44:35.000",
+                    "2010-12-30 02:31:12.000",
+                    "2010-05-31 01:20:43.000",
+                    "2010-12-09 08:21:36.000",
+                    "2010-07-10 12:53:28.000"
+                ],
+                "unique_count": 7263,
+                "unique_value": [
+                    "2010-11-03 17:44:35.000",
+                    "2010-12-30 02:31:12.000",
+                    "2010-05-31 01:20:43.000",
+                    "2010-12-09 08:21:36.000",
+                    "2010-07-10 12:53:28.000"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-06-18 08:14:06.000",
+                "max_value": "2013-12-11 03:24:18.000",
+                "percentage_valid_date": null
+            }
+        }
+    }
+}

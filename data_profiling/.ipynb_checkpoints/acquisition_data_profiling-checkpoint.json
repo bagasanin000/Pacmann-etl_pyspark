@@ -1,0 +1,263 @@
+{
+    "created_at": "2025-03-22T09:52:39.645532",
+    "person_in_charge": "Mrs. H",
+    "profiling_result": {
+        "table_name": "acquisition_data",
+        "format_file": "from Staging",
+        "n_rows": 6330,
+        "n_cols": 11,
+        "report": {
+            "acquisition_id": {
+                "data_type": "int",
+                "sample_values": [
+                    148,
+                    833,
+                    1238,
+                    1342,
+                    1580
+                ],
+                "unique_count": 6330,
+                "unique_value": [
+                    148,
+                    833,
+                    1238,
+                    1342,
+                    1580
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 1,
+                "max_value": 10529,
+                "percentage_valid_date": null
+            },
+            "acquiring_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:396",
+                    "c:19232",
+                    "c:31480",
+                    "c:32987",
+                    "c:63963"
+                ],
+                "unique_count": 3345,
+                "unique_value": [
+                    "c:396",
+                    "c:19232",
+                    "c:31480",
+                    "c:32987",
+                    "c:63963"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:10014",
+                "max_value": "c:9996",
+                "percentage_valid_date": null
+            },
+            "acquired_object_id": {
+                "data_type": "string",
+                "sample_values": [
+                    "c:18076",
+                    "c:26929",
+                    "c:26490",
+                    "c:29707",
+                    "c:20310"
+                ],
+                "unique_count": 6235,
+                "unique_value": [
+                    "c:18076",
+                    "c:26929",
+                    "c:26490",
+                    "c:29707",
+                    "c:20310"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "c:10",
+                "max_value": "c:99737",
+                "percentage_valid_date": null
+            },
+            "term_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "stock",
+                    "cash_and_stock",
+                    "cash",
+                    ""
+                ],
+                "unique_count": 4,
+                "unique_value": [
+                    "stock",
+                    "cash_and_stock",
+                    "cash",
+                    ""
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "stock",
+                "percentage_valid_date": null
+            },
+            "price_amount": {
+                "data_type": "decimal(15,2)",
+                "sample_values": [
+                    8400000.0,
+                    157000000.0,
+                    277000000.0,
+                    283140000.0,
+                    218000000.0
+                ],
+                "unique_count": 851,
+                "unique_value": [
+                    8400000.0,
+                    157000000.0,
+                    277000000.0,
+                    283140000.0,
+                    218000000.0
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": 0.0,
+                "max_value": 2600000000000.0,
+                "percentage_valid_date": null
+            },
+            "price_currency_code": {
+                "data_type": "string",
+                "sample_values": [
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "JPY",
+                    ""
+                ],
+                "unique_count": 6,
+                "unique_value": [
+                    "GBP",
+                    "CAD",
+                    "EUR",
+                    "JPY",
+                    ""
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "USD",
+                "percentage_valid_date": null
+            },
+            "acquired_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2007-07-24T00:00:00",
+                    "2007-10-01T00:00:00",
+                    "2003-01-01T00:00:00",
+                    "2008-03-08T00:00:00",
+                    "2003-02-01T00:00:00"
+                ],
+                "unique_count": 2079,
+                "unique_value": [
+                    "2007-07-24T00:00:00",
+                    "2007-10-01T00:00:00",
+                    "2003-01-01T00:00:00",
+                    "2008-03-08T00:00:00",
+                    "2003-02-01T00:00:00"
+                ],
+                "null_count": 10,
+                "percentage_missing_value": 0.16,
+                "min_value": "1974-07-07T00:00:00",
+                "max_value": "2013-12-12T00:00:00",
+                "percentage_valid_date": 99.84
+            },
+            "source_url": {
+                "data_type": "string",
+                "sample_values": [
+                    "http://www.paidcontent.org/entry/419-the-active-network-acquires-hy-tek-sports-software/",
+                    "http://venturebeat.com/2006/11/17/ayaya-buys-mobile-software-company-traverse-for-15m-a-loss-for-investors/",
+                    "http://www.techcrunch.com/2009/01/14/meez-merges-with-pulse-entertainment-raises-funding/",
+                    "http://americanprinter.com/news/syndicate/united-business-media-risi-0713/",
+                    "http://www.freshnews.com/news/247036/visualant-inc-acquire-transtech-systems-inc"
+                ],
+                "unique_count": 5802,
+                "unique_value": [
+                    "http://www.paidcontent.org/entry/419-the-active-network-acquires-hy-tek-sports-software/",
+                    "http://venturebeat.com/2006/11/17/ayaya-buys-mobile-software-company-traverse-for-15m-a-loss-for-investors/",
+                    "http://www.techcrunch.com/2009/01/14/meez-merges-with-pulse-entertainment-raises-funding/",
+                    "http://americanprinter.com/news/syndicate/united-business-media-risi-0713/",
+                    "http://www.freshnews.com/news/247036/visualant-inc-acquire-transtech-systems-inc"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "https://www.venturesource.com/query/coDet.cfm?eid=16735",
+                "percentage_valid_date": null
+            },
+            "source_description": {
+                "data_type": "string",
+                "sample_values": [
+                    "Demand Media Buys Pluck for $75 million",
+                    "ClickZ",
+                    "Values of n Blog",
+                    "Velti Acquires Ad Infuse",
+                    "Bellevue-based Knowledge Anywhere Acquires Warehouse Intellect"
+                ],
+                "unique_count": 5645,
+                "unique_value": [
+                    "Demand Media Buys Pluck for $75 million",
+                    "ClickZ",
+                    "Values of n Blog",
+                    "Velti Acquires Ad Infuse",
+                    "Bellevue-based Knowledge Anywhere Acquires Warehouse Intellect"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "",
+                "max_value": "zoombu home page",
+                "percentage_valid_date": null
+            },
+            "created_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2009-01-03T15:21:04",
+                    "2009-05-03T16:33:35",
+                    "2009-07-07T23:40:53",
+                    "2009-07-27T10:26:42",
+                    "2009-07-30T06:22:23"
+                ],
+                "unique_count": 6297,
+                "unique_value": [
+                    "2009-01-03T15:21:04",
+                    "2009-05-03T16:33:35",
+                    "2009-07-07T23:40:53",
+                    "2009-07-27T10:26:42",
+                    "2009-07-30T06:22:23"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2007-05-31T22:19:54",
+                "max_value": "2013-12-12T12:38:35",
+                "percentage_valid_date": 100.0
+            },
+            "updated_at": {
+                "data_type": "timestamp",
+                "sample_values": [
+                    "2009-07-08T20:12:05",
+                    "2009-08-28T13:26:21",
+                    "2009-07-27T10:26:42",
+                    "2009-08-01T04:38:15",
+                    "2009-08-13T15:27:26"
+                ],
+                "unique_count": 6233,
+                "unique_value": [
+                    "2009-07-08T20:12:05",
+                    "2009-08-28T13:26:21",
+                    "2009-07-27T10:26:42",
+                    "2009-08-01T04:38:15",
+                    "2009-08-13T15:27:26"
+                ],
+                "null_count": 0,
+                "percentage_missing_value": 0.0,
+                "min_value": "2008-02-05T22:44:45",
+                "max_value": "2013-12-12T12:38:35",
+                "percentage_valid_date": 100.0
+            }
+        }
+    }
+}
