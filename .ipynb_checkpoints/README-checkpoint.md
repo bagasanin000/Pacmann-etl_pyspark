@@ -69,7 +69,7 @@ The target database uses a dimensional model with the following tables:
 - **Fact Tables**: `fact_relationships`, `fact_investments`, `fact_acquisition`, `fact_ipo`.
 - **Dimension Tables**: `dim_company`, `dim_people`, `dim_milestones`, `dim_funding_rounds`, `dim_funds`.
 
-![ERD_warehouse](pict/ERD_warehouse.jpg)
+![ERD_warehouse](pict/ERD_warehouse.png)
 
 ## ETL Pipeline Design
 
