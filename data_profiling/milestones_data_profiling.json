@@ -1,5 +1,5 @@
 {
-    "created_at": "2025-04-21T12:54:47.637813",
+    "created_at": "2025-04-21T14:50:41.702985",
     "person_in_charge": "Mrs. OP",
     "profiling_result": {
         "table_name": "milestones_data",
@@ -10,19 +10,19 @@
             "created_at": {
                 "data_type": "string",
                 "sample_values": [
-                    "2009-05-20 13:18:08.000",
-                    "2009-11-10 20:24:30.000",
-                    "2010-01-01 17:29:22.000",
-                    "2010-01-07 15:46:45.000",
-                    "2010-08-26 18:23:40.000"
+                    "2010-05-26 23:08:38.000",
+                    "2012-06-18 09:00:24.000",
+                    "2010-06-12 19:26:32.000",
+                    "2010-06-27 19:34:45.000",
+                    "2010-07-05 02:22:49.000"
                 ],
                 "unique_count": 7504,
                 "unique_value": [
-                    "2009-05-20 13:18:08.000",
-                    "2009-11-10 20:24:30.000",
-                    "2010-01-01 17:29:22.000",
-                    "2010-01-07 15:46:45.000",
-                    "2010-08-26 18:23:40.000"
+                    "2010-05-26 23:08:38.000",
+                    "2012-06-18 09:00:24.000",
+                    "2010-06-12 19:26:32.000",
+                    "2010-06-27 19:34:45.000",
+                    "2010-07-05 02:22:49.000"
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,
@@ -33,19 +33,19 @@
             "description": {
                 "data_type": "string",
                 "sample_values": [
-                    "Due to extraordinary growth in 2009, Aria Systems announces the opening of its newest office in Silicon Valley.",
-                    "GSI Commerce to Acquire Retail Convergence and Enter Private Sale Space with Addition of Rue La La",
-                    "Second round of Concept presentation to Angel Investors in January",
-                    "Blogtronix launched blogtronixEnterprise 3.5 Video demo overview ",
-                    "Centralway invested in \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n LLC \u0097 the largest US-based mail order portal in the Czech Republic."
+                    "Viewfinity named in 'Hottest Boston Companies' List",
+                    "Launch of the SkillPod Facebook Casual Games Framework",
+                    "Sonicbids launches new venue database.",
+                    "iStockphoto Celebrates 10th Anniversary and A Decade of Creating a Profitable Community \n\n",
+                    "NetCharts Pro v7.0 Sets New Standard for Delivering \u00e2\u0080\u0098Embedded BI\u00e2\u0080\u0099 "
                 ],
                 "unique_count": 8012,
                 "unique_value": [
-                    "Due to extraordinary growth in 2009, Aria Systems announces the opening of its newest office in Silicon Valley.",
-                    "GSI Commerce to Acquire Retail Convergence and Enter Private Sale Space with Addition of Rue La La",
-                    "Second round of Concept presentation to Angel Investors in January",
-                    "Blogtronix launched blogtronixEnterprise 3.5 Video demo overview ",
-                    "Centralway invested in \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n LLC \u0097 the largest US-based mail order portal in the Czech Republic."
+                    "Viewfinity named in 'Hottest Boston Companies' List",
+                    "Launch of the SkillPod Facebook Casual Games Framework",
+                    "Sonicbids launches new venue database.",
+                    "iStockphoto Celebrates 10th Anniversary and A Decade of Creating a Profitable Community \n\n",
+                    "NetCharts Pro v7.0 Sets New Standard for Delivering \u00e2\u0080\u0098Embedded BI\u00e2\u0080\u0099 "
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,
@@ -57,18 +57,18 @@
                 "data_type": "string",
                 "sample_values": [
                     "2009-06-23",
-                    "2008-10-26",
+                    "2010-09-24",
+                    "2008-12-03",
                     "2009-12-04",
-                    "2010-02-12",
-                    "2010-09-24"
+                    "2010-02-12"
                 ],
                 "unique_count": 924,
                 "unique_value": [
                     "2009-06-23",
-                    "2008-10-26",
+                    "2010-09-24",
+                    "2008-12-03",
                     "2009-12-04",
-                    "2010-02-12",
-                    "2010-09-24"
+                    "2010-02-12"
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,
@@ -94,18 +94,18 @@
             "milestone_id": {
                 "data_type": "bigint",
                 "sample_values": [
-                    1677,
-                    1806,
-                    1950,
-                    2040,
+                    4823,
+                    4894,
+                    5385,
+                    5409,
                     2453
                 ],
                 "unique_count": 8152,
                 "unique_value": [
-                    1677,
-                    1806,
-                    1950,
-                    2040,
+                    4823,
+                    4894,
+                    5385,
+                    5409,
                     2453
                 ],
                 "null_count": 0,
@@ -117,19 +117,19 @@
             "object_id": {
                 "data_type": "string",
                 "sample_values": [
+                    "c:7820",
+                    "c:167257",
                     "c:23012",
-                    "c:29197",
                     "c:55009",
-                    "c:396",
-                    "c:64940"
+                    "c:396"
                 ],
                 "unique_count": 4065,
                 "unique_value": [
+                    "c:7820",
+                    "c:167257",
                     "c:23012",
-                    "c:29197",
                     "c:55009",
-                    "c:396",
-                    "c:64940"
+                    "c:396"
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,
@@ -140,18 +140,18 @@
             "source_description": {
                 "data_type": "string",
                 "sample_values": [
-                    "GSI Commerce to Acquire Retail Convergence and Enter Private Sale Space with Addition of Rue La La",
+                    "Zedira Raises Additional Funding",
+                    "Durham's ReverbNation raises $3 million in venture capital",
                     "Muecs Ltd. Launches an Online Collaboration Tool for Enterprises With a Social Media Analyzer",
                     "Progress Software stock split prompts rise in share price",
-                    "Datapipe Named Growth Company of the Year",
                     "Eroom G&G Co Ltd acquires a minority stake in Timo Technology Co Ltd"
                 ],
                 "unique_count": 5452,
                 "unique_value": [
-                    "GSI Commerce to Acquire Retail Convergence and Enter Private Sale Space with Addition of Rue La La",
+                    "Zedira Raises Additional Funding",
+                    "Durham's ReverbNation raises $3 million in venture capital",
                     "Muecs Ltd. Launches an Online Collaboration Tool for Enterprises With a Social Media Analyzer",
                     "Progress Software stock split prompts rise in share price",
-                    "Datapipe Named Growth Company of the Year",
                     "Eroom G&G Co Ltd acquires a minority stake in Timo Technology Co Ltd"
                 ],
                 "null_count": 0,
@@ -163,19 +163,19 @@
             "source_url": {
                 "data_type": "string",
                 "sample_values": [
-                    "http://www.edmodo.com/blog/2009/07/31/edmodo-3-0-has-launched/",
-                    "http://www.xconomy.com/boston/2009/11/04/the-litl-computer-that-could-boston-startup-tries-a-new-take-on-the-home-internet-appliance/",
-                    "http://www.loiclemeur.com/english/2008/06/movable-type-no.html",
+                    "http://www.tokyocamp.net/",
+                    "http://whois.domaintools.com/mcbwebdesign.co.uk",
                     "https://www.facebook.com/notes/fbfund/fbfund-2009-top-50-finalists/84440649573",
-                    "http://www.zynga.com/zyngaopenstodevelopers.php"
+                    "http://kara.allthingsd.com/20101110/playboy-goes-geo-local-with-scout-app-even-as-iconic-media-company-attempts-turnaround/?reflink=ATD_mktw_quotes",
+                    "http://paidcontent.org/article/419-ipg-shifts-initiatives-breen-to-reprise-media-as-global-ceo/"
                 ],
                 "unique_count": 6064,
                 "unique_value": [
-                    "http://www.edmodo.com/blog/2009/07/31/edmodo-3-0-has-launched/",
-                    "http://www.xconomy.com/boston/2009/11/04/the-litl-computer-that-could-boston-startup-tries-a-new-take-on-the-home-internet-appliance/",
-                    "http://www.loiclemeur.com/english/2008/06/movable-type-no.html",
+                    "http://www.tokyocamp.net/",
+                    "http://whois.domaintools.com/mcbwebdesign.co.uk",
                     "https://www.facebook.com/notes/fbfund/fbfund-2009-top-50-finalists/84440649573",
-                    "http://www.zynga.com/zyngaopenstodevelopers.php"
+                    "http://kara.allthingsd.com/20101110/playboy-goes-geo-local-with-scout-app-even-as-iconic-media-company-attempts-turnaround/?reflink=ATD_mktw_quotes",
+                    "http://paidcontent.org/article/419-ipg-shifts-initiatives-breen-to-reprise-media-as-global-ceo/"
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,
@@ -186,19 +186,19 @@
             "updated_at": {
                 "data_type": "string",
                 "sample_values": [
-                    "2009-06-24 17:34:08.000",
-                    "2013-05-17 14:39:23.000",
-                    "2009-08-20 16:54:33.000",
-                    "2009-09-11 23:48:42.000",
-                    "2009-09-30 18:24:17.000"
+                    "2010-05-31 01:20:43.000",
+                    "2010-06-16 21:55:18.000",
+                    "2010-06-23 05:13:05.000",
+                    "2010-06-29 01:42:39.000",
+                    "2013-03-21 08:42:19.000"
                 ],
                 "unique_count": 7263,
                 "unique_value": [
-                    "2009-06-24 17:34:08.000",
-                    "2013-05-17 14:39:23.000",
-                    "2009-08-20 16:54:33.000",
-                    "2009-09-11 23:48:42.000",
-                    "2009-09-30 18:24:17.000"
+                    "2010-05-31 01:20:43.000",
+                    "2010-06-16 21:55:18.000",
+                    "2010-06-23 05:13:05.000",
+                    "2010-06-29 01:42:39.000",
+                    "2013-03-21 08:42:19.000"
                 ],
                 "null_count": 0,
                 "percentage_missing_value": 0.0,

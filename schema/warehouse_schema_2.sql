@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS fact_investments (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     
     -- Foreign Key Constraints
-    CONSTRAINT fk_funded FOREIGN KEY (funded_object_id) REFERENCES dim_company(company_object_id),
+    CONSTRAINT fk_funded FOREIGN KEY (funded_object_id) REFERENCES dim_company(company_object_id) DEFERRABLE INITIALLY DEFERRED,
     CONSTRAINT fk_investor_company FOREIGN KEY (investor_object_id) REFERENCES dim_company(company_object_id) DEFERRABLE INITIALLY DEFERRED,
     CONSTRAINT fk_investor_person FOREIGN KEY (investor_object_id) REFERENCES dim_people(people_object_id) DEFERRABLE INITIALLY DEFERRED
 );

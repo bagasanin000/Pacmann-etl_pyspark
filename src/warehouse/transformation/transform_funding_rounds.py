@@ -18,14 +18,11 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
             "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
 
-        # Step 1: Replace "" to null
         df = df.na.replace("", None)
 
-        # Step 2: Extract prefix and ID
         df = df.withColumn("funding_entity_type", extract_prefix(col("object_id")))
         df = df.withColumn("object_id", extract_id(col("object_id")).cast(IntegerType()))
 
-        # Step 3: Format data type
         df = df.withColumn("funding_date", to_date(col("funded_at")))
         df = df.withColumn("funding_entity_type", col("funding_entity_type").cast(StringType()))
         df = df.withColumn("participants", col("participants").cast(IntegerType()))
@@ -38,7 +35,6 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
             "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
 
-        # Step 4: Mapping to target column
         df_transformed = df.select(
             col("funding_round_id"),
             col("funding_entity_type"),
@@ -61,7 +57,6 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
             col("updated_at")
         )
 
-        # Step 5: Handle null values
         df_transformed = df_transformed.fillna({
             "round_type": "Unknown",
             "raised_currency": "USD",
@@ -71,7 +66,6 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
             "source_description": "Unknown",
         })
 
-        # Step 6: Drop duplicates dan invalid data
         df_transformed = df_transformed.dropDuplicates(["funding_round_id"])
         df_transformed = df_transformed.filter(col("round_type") != "Unknown")
 
@@ -81,7 +75,6 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
             "source_description", clean_alpha_text("source_description")
         )
 
-        # Default fallback kalau funding_entity_type gak valid
         df_transformed = df_transformed.withColumn(
             "funding_entity_type",
             when(col("funding_entity_type").isin("c", "p"), col("funding_entity_type")).otherwise("c")
@@ -98,27 +91,43 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
         df_company_ids = transformed_company.select("company_object_id", "company_id")
         df_people_ids = transformed_people.select("people_object_id", "people_id")
 
-        # === Logging invalid join
-        invalid_people = df_transformed.filter(col("funding_entity_type") == "p") \
-            .join(broadcast(df_people_ids), col("funding_object_id") == col("people_object_id"), "left_anti")
-        save_invalid_ids(invalid_people, "funding_rounds")
-
+        # Cek invalid foreign key untuk logging
         invalid_company = df_transformed.filter(col("funding_entity_type") == "c") \
             .join(broadcast(df_company_ids), col("funding_object_id") == col("company_object_id"), "left_anti")
         save_invalid_ids(invalid_company, "funding_rounds")
 
-        # === Join dan validasi FK
-        df_company = df_transformed.filter(col("funding_entity_type") == "c") \
-            .join(broadcast(df_company_ids), col("funding_object_id") == col("company_object_id"), "left") \
-            .filter(col("company_id").isNotNull()) \
-            .drop("company_id", "company_object_id")
+        invalid_people = df_transformed.filter(col("funding_entity_type") == "p") \
+            .join(broadcast(df_people_ids), col("funding_object_id") == col("people_object_id"), "left_anti")
 
-        df_people = df_transformed.filter(col("funding_entity_type") == "p") \
-            .join(broadcast(df_people_ids), col("funding_object_id") == col("people_object_id"), "left") \
-            .filter(col("people_id").isNotNull()) \
-            .drop("people_id", "people_object_id")
+        if invalid_people.count() > 0:
+            invalid_ids = invalid_people.select("funding_entity_type", "funding_object_id").toPandas().values.tolist()
+            save_invalid_ids(invalid_ids, "funding_rounds")
 
-        # Union result
+        # === JOIN VALID ===
+        
+        df_company = (
+            df_transformed.filter(col("funding_entity_type") == "c")
+            .join(
+                broadcast(df_company_ids),
+                df_transformed["funding_object_id"] == df_company_ids["company_object_id"],
+                "inner"
+            )
+            .withColumn("funding_object_id", col("company_object_id"))
+            .drop("company_id", "company_object_id") 
+        )
+        
+        df_people = (
+            df_transformed.filter(col("funding_entity_type") == "p")
+            .join(
+                broadcast(df_people_ids),
+                df_transformed["funding_object_id"] == df_people_ids["people_object_id"],
+                "inner"
+            )
+            .withColumn("funding_object_id", col("people_object_id"))
+            .drop("people_id", "people_object_id")  
+        )
+
+
         df_valid = df_company.unionByName(df_people)
         df_valid = df_valid.dropDuplicates(["funding_round_id"])
 

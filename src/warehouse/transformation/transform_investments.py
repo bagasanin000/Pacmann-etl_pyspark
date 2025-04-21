@@ -17,56 +17,53 @@ def transform_investments(df, transformed_company, transformed_people):
             "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
 
-        # Clean basic
         df = df.na.replace("", None).dropDuplicates(["investment_id"])
+
+        # Extract ID & Prefix
         df = df.withColumn("investor_entity_type", extract_prefix(col("investor_object_id")))
         df = df.withColumn("investor_object_id", extract_id(col("investor_object_id")).cast("int"))
         df = df.withColumn("funded_object_id", extract_id(col("funded_object_id")).cast("int"))
         df = df.withColumn("funding_round_id", col("funding_round_id").cast("int"))
 
-        # Join to funding_rounds for FK validation
-       # df = df.join(
-            # broadcast(transformed_funding_rounds.select("funding_round_id").distinct()),
-            # on="funding_round_id",
-            # how="inner"
-        # )
-
-        # ========== Validate funded_object_id ==========
-        company_ids = transformed_company.select("company_object_id").distinct()
-        people_ids = transformed_people.select("people_object_id").distinct()
-
+        # === VALIDASI funded_object_id (yang menerima dana)
         funded_company = df.join(
-            broadcast(company_ids),
+            broadcast(transformed_company.select("company_object_id")),
             df["funded_object_id"] == col("company_object_id"),
             "inner"
-        ).withColumn("funded_entity_type", lit("c")).drop("company_object_id")
-
+        ).withColumn("funded_entity_type", lit("c")) \
+         .withColumn("funded_object_id", col("company_object_id")) \
+         .drop("company_object_id")  
+        
         funded_people = df.join(
-            broadcast(people_ids),
+            broadcast(transformed_people.select("people_object_id")),
             df["funded_object_id"] == col("people_object_id"),
             "inner"
-        ).withColumn("funded_entity_type", lit("p")).drop("people_object_id")
+        ).withColumn("funded_entity_type", lit("p")) \
+         .withColumn("funded_object_id", col("people_object_id")) \
+         .drop("people_object_id")  
 
         df_funded = funded_company.unionByName(funded_people)
 
-        # ========== Validate investor_object_id ==========
+        # === VALIDASI investor_object_id (yang memberi dana)
         investor_company = df_funded.filter(col("investor_entity_type") == "c") \
             .join(
-                broadcast(company_ids),
+                broadcast(transformed_company.select("company_object_id")),
                 df_funded["investor_object_id"] == col("company_object_id"),
                 "inner"
-            ).drop("company_object_id")
-
+            ).withColumn("investor_object_id", col("company_object_id")) \
+             .drop("company_object_id")  
+        
         investor_people = df_funded.filter(col("investor_entity_type") == "p") \
             .join(
-                broadcast(people_ids),
+                broadcast(transformed_people.select("people_object_id")),
                 df_funded["investor_object_id"] == col("people_object_id"),
                 "inner"
-            ).drop("people_object_id")
+            ).withColumn("investor_object_id", col("people_object_id")) \
+             .drop("people_object_id")  
 
-        df_valid = investor_company.unionByName(investor_people)
-        df_valid = df_valid.dropDuplicates(["investment_id"])
-        
+        df_valid = investor_company.unionByName(investor_people).dropDuplicates(["investment_id"])
+
+        # Select relevant cols for fact table
         df_valid = df_valid.select(
             "investment_id",
             "funding_round_id",
@@ -83,6 +80,12 @@ def transform_investments(df, transformed_company, transformed_people):
             "table_name": "investments",
             "etl_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
+
+        # === Logging ID yang invalid
+        invalid_investors = df_valid.filter(col("investor_object_id").isNull())
+        if invalid_investors.count() > 0:
+            invalid_ids = invalid_investors.select("investor_entity_type", "investor_object_id").toPandas().values.tolist()
+            save_invalid_ids(invalid_ids, "investments")
 
         return df_valid
 
