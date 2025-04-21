@@ -120,7 +120,6 @@ def transform_funding_rounds(df, transformed_company, transformed_people):
 
         # Union result
         df_valid = df_company.unionByName(df_people)
-        df_valid = df_valid.filter(col("company_object_id").isNotNull() & col("people_object_id").isNotNull() & col("funding_object_id").isNotNull())
         df_valid = df_valid.dropDuplicates(["funding_round_id"])
 
         log_to_db({

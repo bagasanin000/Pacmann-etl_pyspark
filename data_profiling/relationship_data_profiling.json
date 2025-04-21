@@ -1,5 +1,5 @@
 {
-    "created_at": "2025-04-20T11:43:17.135207",
+    "created_at": "2025-04-21T12:53:43.131249",
     "person_in_charge": "Mr. CCC",
     "profiling_result": {
         "table_name": "relationship_data",
@@ -167,7 +167,7 @@
                     "Designer, UX, UI",
                     "VP, Platform & Technology Develop",
                     "Director of Product Marketing",
-                    "Senior User Interface Developer"
+                    "President & Chief Product Officer"
                 ],
                 "unique_count": 27558,
                 "unique_value": [
@@ -175,7 +175,7 @@
                     "Designer, UX, UI",
                     "VP, Platform & Technology Develop",
                     "Director of Product Marketing",
-                    "Senior User Interface Developer"
+                    "President & Chief Product Officer"
                 ],
                 "null_count": 5423,
                 "percentage_missing_value": 4.03,
@@ -211,16 +211,16 @@
                 "sample_values": [
                     "2010-01-27 00:32:09.000",
                     "2008-04-13 18:34:47.000",
-                    "2012-06-24 01:16:01.000",
                     "2013-08-29 19:08:03.000",
+                    "2012-06-24 01:16:01.000",
                     "2011-04-23 03:42:49.000"
                 ],
                 "unique_count": 91116,
                 "unique_value": [
                     "2010-01-27 00:32:09.000",
                     "2008-04-13 18:34:47.000",
-                    "2012-06-24 01:16:01.000",
                     "2013-08-29 19:08:03.000",
+                    "2012-06-24 01:16:01.000",
                     "2011-04-23 03:42:49.000"
                 ],
                 "null_count": 0,
