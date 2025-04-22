@@ -91,22 +91,22 @@ CREATE TABLE IF NOT EXISTS dim_funding_rounds (
     raised_currency VARCHAR(10), 
     raised_amount DECIMAL(15, 2),
     raised_amount_usd DECIMAL(15, 2),
-	pre_money_currency VARCHAR(10), 
+    pre_money_currency VARCHAR(10), 
     pre_money_valuation DECIMAL(15, 2),
     pre_money_valuation_usd DECIMAL(15, 2),
-	post_money_currency VARCHAR(10), 
+    post_money_currency VARCHAR(10), 
     post_money_valuation DECIMAL(15, 2),
     post_money_valuation_usd DECIMAL(15, 2),
     participants INT,
     source_url VARCHAR(255),
     source_description VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    -- Foreign Key Constraints
-	CONSTRAINT fk_funding_company FOREIGN KEY (funding_object_id) REFERENCES dim_company(company_object_id) DEFERRABLE INITIALLY DEFERRED,
-	CONSTRAINT fk_funding_people FOREIGN KEY (funding_object_id) REFERENCES dim_people(people_object_id) DEFERRABLE INITIALLY DEFERRED
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	
+    -- FK dropped, validation via ETL
 );
+
+
 
 -- fact_investments
 CREATE TABLE IF NOT EXISTS fact_investments (
@@ -118,31 +118,11 @@ CREATE TABLE IF NOT EXISTS fact_investments (
     investor_object_id INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    -- Foreign Key Constraints
-    CONSTRAINT fk_funded FOREIGN KEY (funded_object_id) REFERENCES dim_company(company_object_id) DEFERRABLE INITIALLY DEFERRED,
-    CONSTRAINT fk_investor_company FOREIGN KEY (investor_object_id) REFERENCES dim_company(company_object_id) DEFERRABLE INITIALLY DEFERRED,
-    CONSTRAINT fk_investor_person FOREIGN KEY (investor_object_id) REFERENCES dim_people(people_object_id) DEFERRABLE INITIALLY DEFERRED
+
+    -- Hanya FK ke funding_rounds (bukan ke company/people)
+    CONSTRAINT fk_funding_round FOREIGN KEY (funding_round_id) REFERENCES dim_funding_rounds(funding_round_id)
 );
 
-
--- table fact_relationship
-CREATE TABLE IF NOT EXISTS fact_relationship (
-    relationship_id INT PRIMARY KEY,
-	people_entity_type VARCHAR(10),
-    people_object_id INT,
-	relationship_entity_type VARCHAR(10),
-    relationship_object_id INT,
-    start_at DATE,
-    end_at DATE,
-    title VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    -- Foreign Key Constraints
-    CONSTRAINT fk_relationship_people FOREIGN KEY (people_object_id) REFERENCES dim_people(people_object_id),
-    CONSTRAINT fk_relationship_company FOREIGN KEY (relationship_object_id) REFERENCES dim_company(company_object_id)
-);
 
 
 -- table fact_ipo
