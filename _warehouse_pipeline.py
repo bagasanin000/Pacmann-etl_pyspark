@@ -37,7 +37,7 @@ def pipeline_dwh():
     transformed_funding_rounds = transform_funding_rounds(funding_rounds, transformed_company, transformed_people)
     transformed_relationship = transform_relationship(relationship, transformed_company, transformed_people)
     transformed_ipo = transform_ipo(ipo, transformed_company)
-    transformed_investments = transform_investments(investments, transformed_company, transformed_people)
+    transformed_investments = transform_investments(investments, transformed_company, transformed_people, transformed_funding_rounds)
     transformed_funds = transform_funds(funds)
 
     # Load to Data Warehouse
